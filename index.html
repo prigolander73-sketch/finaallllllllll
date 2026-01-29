@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lander C. Prigo | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header class="profile-card">
+            <div class="header-flex">
+                <div class="image-container">
+                    <img src="portfolio.jpg" alt="Lander C. Prigo" class="profile-img">
+                    <span class="status-badge">Available for Projects</span>
+                </div>
+                <div class="profile-text">
+                    <div class="name-row">
+                        <h1>Lander C. Prigo</h1>
+                        <span class="verified-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.5 12.5c0-1.58-.88-2.95-2.18-3.66.26-.89.43-1.82.43-2.79 0-3.02-2.45-5.47-5.47-5.47-.97 0-1.9.17-2.79.43L12.5 1.5l-1.06.43c-.89-.26-1.82-.43-2.79-.43-3.02 0-5.47 2.45-5.47 5.47 0 .97.17 1.9.43 2.79-1.3.71-2.18 2.08-2.18 3.66 0 1.58.88 2.95 2.18 3.66-.26.89-.43 1.82-.43 2.79 0 3.02 2.45 5.47 5.47 5.47.97 0 1.9-.17 2.79-.43l1.06.43 1.06-.43c.89.26 1.82.43 2.79.43 3.02 0 5.47-2.45 5.47-5.47 0-.97-.17-1.9-.43-2.79 1.3-.71 2.18-2.08 2.18-3.66zm-11.41 4.75L7.54 13.7l1.41-1.41 2.14 2.14 5.16-5.16 1.41 1.41-6.57 6.57z"/></svg>
+                        </span>
+                    </div>
+                    <p class="headline">BSIT Student & Hardware Solutions Specialist</p>
+                    <div class="header-tags">
+                        <span>📍 Philippines</span>
+                        <span>🎓 2nd Year BSIT</span>
+                        <span>⚙️ Hardware Specialist</span>
+                    </div>
+                    <div class="actions">
+                        <a href="mailto:your-email@example.com" class="btn btn-dark">Get in Touch</a>
+                        <a href="#" class="btn btn-outline">View Resume</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="grid-layout">
+            <section class="card">
+                <div class="card-header">
+                    <span class="icon">👤</span>
+                    <h3>Professional Summary</h3>
+                </div>
+                <p>I am a 19-year-old dedicated IT student specializing in computer systems architecture and maintenance. I bridge the gap between technical complexity and user reliability.</p>
+                <div class="stats-row">
+                    <div class="stat-item"><strong>Skills</strong><span>Hardware</span></div>
+                    <div class="stat-item"><strong>Experience</strong><span>2 Years Study</span></div>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="card-header">
+                    <span class="icon">🛠️</span>
+                    <h3>Core Technical Skills</h3>
+                </div>
+                <div class="tag-cloud">
+                    <span class="skill-tag">Windows 10/11 Deployment</span>
+                    <span class="skill-tag">System Unit Assembly</span>
+                    <span class="skill-tag">Hardware Diagnostics</span>
+                    <span class="skill-tag">Internal Component Disassembly</span>
+                    <span class="skill-tag">Thermal Management</span>
+                </div>
+            </section>
+
+            <section class="card calculator-container">
+                <div class="card-header">
+                    <span class="icon">🧮</span>
+                    <h3>Project: Scientific Calculator</h3>
+                </div>
+                <div class="calc-box">
+                    <div class="calc-screen">
+                        <div id="prev-op"></div>
+                        <div id="display">0</div>
+                    </div>
+                    <div class="calc-keys">
+                        <button onclick="clearCalc()" class="key-top">AC</button>
+                        <button onclick="deleteLast()" class="key-top">DEL</button>
+                        <button onclick="inputOp('/')" class="key-op">÷</button>
+                        <button onclick="inputNum('7')">7</button>
+                        <button onclick="inputNum('8')">8</button>
+                        <button onclick="inputNum('9')">9</button>
+                        <button onclick="inputOp('*')" class="key-op">×</button>
+                        <button onclick="inputNum('4')">4</button>
+                        <button onclick="inputNum('5')">5</button>
+                        <button onclick="inputNum('6')">6</button>
+                        <button onclick="inputOp('-')" class="key-op">-</button>
+                        <button onclick="inputNum('1')">1</button>
+                        <button onclick="inputNum('2')">2</button>
+                        <button onclick="inputNum('3')">3</button>
+                        <button onclick="inputOp('+')" class="key-op">+</button>
+                        <button onclick="inputNum('0')" class="span-two">0</button>
+                        <button onclick="inputNum('.')">.</button>
+                        <button onclick="runCalc()" class="key-equal">=</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <div class="card-header">
+                    <span class="icon">📜</span>
+                    <h3>Educational Background</h3>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="dot"></span>
+                        <h4>BS Information Technology</h4>
+                        <p class="sub">University Level | 2nd Year</p>
+                        <p class="date">Present</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="dot"></span>
+                        <h4>Hardware Certification Path</h4>
+                        <p class="sub">Self-Directed Mastery</p>
+                        <p class="date">Ongoing</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        let currentInput = '0';
+        let operation = null;
+        let prevValue = '';
+
+        const display = document.getElementById('display');
+        const prevDisplay = document.getElementById('prev-op');
+
+        function updateDisplay() {
+            display.innerText = currentInput;
+            prevDisplay.innerText = operation ? `${prevValue} ${operation}` : '';
+        }
+
+        function inputNum(num) {
+            if (currentInput === '0') currentInput = num;
+            else currentInput += num;
+            updateDisplay();
+        }
+
+        function inputOp(op) {
+            operation = op;
+            prevValue = currentInput;
+            currentInput = '0';
+            updateDisplay();
+        }
+
+        function runCalc() {
+            let result;
+            const prev = parseFloat(prevValue);
+            const current = parseFloat(currentInput);
+            if (isNaN(prev) || isNaN(current)) return;
+            
+            switch (operation) {
+                case '+': result = prev + current; break;
+                case '-': result = prev - current; break;
+                case '*': result = prev * current; break;
+                case '/': result = prev / current; break;
+                default: return;
+            }
+            currentInput = result.toString();
+            operation = null;
+            updateDisplay();
+        }
+
+        function clearCalc() { currentInput = '0'; operation = null; prevValue = ''; updateDisplay(); }
+        function deleteLast() { currentInput = currentInput.slice(0, -1) || '0'; updateDisplay(); }
+    </script>
+</body>
+</html>
